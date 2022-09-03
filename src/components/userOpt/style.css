@@ -1,0 +1,40 @@
+.otp-group {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content:center;
+  }
+  
+  .otp-input {
+    direction: ltr !important;
+    width: 55px;
+    height: 60px;
+    border: none;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    margin-right: 8px;
+    margin-left: 8px;
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .otp-input:nth-child(1){
+    margin-left: 0 !important;
+  }
+  .otp-input:last-child{
+    margin-right: 0 !important;
+  }
+  .timeShow{
+    display: flex;
+    align-items: center;
+    margin-top: .25rem;
+  }
+  .timeShowIc{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.25rem;
+  }
+.text-sm {
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem/* 20px */;
+}

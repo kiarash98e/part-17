@@ -1,58 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from 'react'
+import FormStepper from './components/formStepper/formStepper'
+import { Box,Typography } from '@mui/material'
+import ausmt from '../src/img/ausmt.webp'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+
+const App:React.FC = () => {
+  return(
+    <Box
+      sx={{ borderRadius:8,width:"100%",height:"100%",display:"flex",flexDirection:"column",py:5,alignItems:"center",justifyContent:"center" }}>
+      <Box 
+        
+        sx={{display:"flex",flexDirection:"column",justifyContent:"center" }}>
+          <Box sx={{display:"flex",justifyContent:"center"}}>
+            <img src={ausmt} width="70px" height={"100px"} alt="amol univercity" />
+          </Box>
+          <Typography style={{ color:"#093637"}} component={"h2"} sx={{fontSize:"25px",py:2,fontWeight:"bold"}}>فرم عضویت در کارگروه فرهنگی</Typography>
+      </Box>
+      <FormStepper/>
+    </Box>
+  )
 }
-
-export default App;
+export default App
