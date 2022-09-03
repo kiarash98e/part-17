@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/part-17/static/css/main.dc000d94.css",
+    "main.js": "/part-17/static/js/main.276ba494.js",
+    "static/js/787.d080b77a.chunk.js": "/part-17/static/js/787.d080b77a.chunk.js",
+    "static/media/IRANSansX-Regular.woff": "/part-17/static/media/IRANSansX-Regular.97fa446c7871fe1d3d2c.woff",
+    "static/media/ausmt.webp": "/part-17/static/media/ausmt.48f4a15ef553ff23e656.webp",
+    "index.html": "/part-17/index.html",
+    "main.dc000d94.css.map": "/part-17/static/css/main.dc000d94.css.map",
+    "main.276ba494.js.map": "/part-17/static/js/main.276ba494.js.map",
+    "787.d080b77a.chunk.js.map": "/part-17/static/js/787.d080b77a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc000d94.css",
+    "static/js/main.276ba494.js"
+  ]
+}
