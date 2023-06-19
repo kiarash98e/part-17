@@ -7,6 +7,8 @@ import { useForm } from 'react-hook-form'
 import useFormRedux from '../../redux/selector/formSelector'
 import { useStyles } from './style'
 import Select from '../ui/select'
+import { useStudentMutation } from '../../services/student/use-student'
+import { useGrade } from '../../services/grade/use-all-grade'
 
 
 const userDetail: React.FC = () => {
@@ -28,7 +30,22 @@ const userDetail: React.FC = () => {
     const maqte = formState.maqte
     // const navigate = useNavigate()
 
-    const { register, formState: { errors }, handleSubmit } = useForm({
+    //const { mutateAsync:StudentForm, isLoading } = useStudentMutation()
+    const { data } = useGrade()
+
+    const [final,setFinal]=React.useState([]);
+        React.useEffect(()=>{
+            fetch('http://192.168.1.35:8585/swagger/v1/').then((resp) => resp.json()).then((data)=>{setFinal(data)});
+        },[])
+
+        console.log(final)
+    const { 
+        register, 
+        formState: { errors }, 
+        handleSubmit,
+        setError,
+        getValues 
+    } = useForm({
         defaultValues: {
             firstName,
             lastName,
